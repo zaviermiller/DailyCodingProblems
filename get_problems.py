@@ -1,4 +1,5 @@
-
+# This program logs into a gmail account and gets all DCP emails
+# Will optimize with search in the future
 
 import imaplib
 import email
