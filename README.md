@@ -7,7 +7,7 @@ Everyday, I aim to finish the coding problem sent to me by a service called [Dai
 **Challenge Statuses**
 
 ```diff
-! Day 1: complete
-! Day 2: complete
-! Day 3: complete
++ Day 1: complete
++ Day 2: complete
++ Day 3: complete
 ```
