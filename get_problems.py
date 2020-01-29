@@ -40,12 +40,12 @@ for num in data[0].split():
         parsed = get_body(raw)
         body = parsed.split('This problem was ')[1].split(
             "\r\n\r", 1)[1].split("--------", 1)[0].split("\r\n\r\r\n\r", 1)[0].split("\r\n\r\n\r\n")[0]
-        day = format_day(raw['subject'].split("#")[1][0])
+        day = format_day(raw['subject'].split("#")[1].split(" ")[0])
         difficulty = raw['subject'][::-1].split(' ', 2)[1][::-1]
         if f'dcp_{day}.py' not in os.listdir():
             file = open(f'dcp_{day}.py', "w")
             file.write(
-                f'# =-=-=-= DAY { raw["subject"].split("#")[1][0] } {difficulty} =-=-=-=\n#\n')
+                f'# =-=-=-= DAY { raw["subject"].split("#")[1].split(" ")[0] } {difficulty} =-=-=-=\n#\n')
             lines = body.split("\r\n")
             for line in lines:
                 if "\n" in line:
