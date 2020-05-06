@@ -29,7 +29,7 @@ M.login(email_user, email_pass)
 M.select('Inbox')
 print("connected!")
 
-typ, data = M.search(None, 'ALL')
+typ, data = M.search(None, '(UNSEEN)')
 
 print('beginning email processing...')
 for num in data[0].split():
