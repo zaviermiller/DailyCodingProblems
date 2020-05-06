@@ -22,6 +22,7 @@ def format_day(day):
 
 email_user = os.environ.get('DCP_GMAIL')
 email_pass = os.environ.get('DCP_PASS')
+print(email_pass, email_user)
 print("connecting to imap server...")
 
 M = imaplib.IMAP4_SSL('imap.gmail.com')
