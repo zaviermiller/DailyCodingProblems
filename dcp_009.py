@@ -11,6 +11,9 @@
 def largest_na_sum(nums):
     queue = []
     queue.append((0,0))
+    
+    if len(nums) > 1:
+        queue.append((1,0))
 
     totals = []
 
